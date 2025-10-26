@@ -1,0 +1,32 @@
+body {
+    background-color: aqua;
+}
+h1{
+    color: darkblue;
+    font-family: comic sans MS;
+    text-align: center;
+    font-size: 60px;
+}
+h4 {
+    text-align: right;
+}
+p {
+    text-align: center;
+}
+p:first-of-type {
+    
+        color: rgb(235, 150, 40);
+}
+h3 {
+    color: black;
+}
+h3 a {
+    color: aliceblue;
+}
+h3 a:hover{
+    color: red; 
+}
+p a:hover{
+    color: white;
+    background-color: blue;
+}
