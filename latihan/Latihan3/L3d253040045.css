@@ -3,7 +3,7 @@ body {
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
    
 }
     
@@ -15,11 +15,16 @@ h1{
 }
 h4 {
     text-align: center;
+    font-style: italic;
+    margin-top: 10px;
 }
 p {
     text-align: center;
 }
-p:first-of-type {
+p{
+    text-align: right;
+}
+center{
     
     color: rgb(235, 150, 40);
 }

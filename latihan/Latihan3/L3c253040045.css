@@ -1,5 +1,6 @@
 body {
     background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1{
     color: darkblue;
@@ -9,12 +10,13 @@ h1{
 }
 h4 {
     text-align: right;
+    font-style: italic;
 }
 p {
-    text-align: center;
+    text-align: right;
 }
-p:first-of-type {
-    
+center {
+        text-align: center;
         color: rgb(235, 150, 40);
 }
 h3 {
