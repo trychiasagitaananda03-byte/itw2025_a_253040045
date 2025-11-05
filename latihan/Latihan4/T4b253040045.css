@@ -1,0 +1,234 @@
+body {
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+}
+.container {
+    background-image: url(bg4.jpg);
+    background-size: cover;
+    width: 800px;
+    margin: auto;
+    border-radius: 45px;
+}
+.header {
+    display: block;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.header .judul {
+    font: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid rgb(247, 225, 240); 
+    border-radius: 30px; 
+    padding: 15px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.top-menu{
+    background-image: url(bg4.jpg);
+    border-radius: 35px;
+    background-position: left;
+    background-size: contain;
+    background-attachment: fixed;
+    width: 550px;
+    margin: 20px;
+
+}
+.top-menu ul li{
+    padding-bottom: 12px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 15px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.top-menu a {
+    text-decoration: none;
+    color: rgb(3, 3, 17);
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.top-menu a:hover {
+    color: purple;
+}
+.hero img{
+    height: 270px;
+    width: 250px;
+    background-size: cover;
+    background-position: 0  -180px;
+    margin-left: 100px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    border-bottom: 5px solid rgb(238, 145, 189);
+    /* border-bottom: 5px solid rgb(172, 107, 192); */
+    border-top: 5px solid rgb(238, 145, 189);
+    border-right: 5px solid rgb(238, 145, 189);
+    border-left: 5px solid rgb(238, 145, 189);
+}
+
+.about {
+    padding: 20px;
+}
+.about h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.about .penulis {
+    font-size: 14px;
+    margin-top: -20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about .penulis a {
+    color: rgb(147, 42, 196);
+    text-decoration: none;
+}
+.about p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.about li {
+    margin-left: 20px;
+}
+.album {
+    font-size: 28px;
+    margin-top: -20px;
+    padding: 20px;
+    margin-bottom: -15px;
+}
+.album-container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.lilac img{
+    padding: 20px;
+    border-radius: 15%;
+    background-size: cover;
+    height: 280px;
+    width: 222px;
+    transition: transform 0.3s;
+ }
+ .love img{
+    padding: 20px;
+    border-radius: 15%;
+    background-size: cover;
+    height: 280px;
+    width: 222px;
+    transition: transform 0.3s;
+}
+.poem img{
+    padding: 20px;
+    border-radius: 15%;
+    background-size: cover;
+    height: 280px;
+    width: 230px;
+    transition: transform 0.3s;
+}
+.lilac, .love, .poem {
+    position: relative;
+ }
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate( -375px); */
+    /* background: rgba(0, 0, 0, 0.6); */
+    color: rgb(255, 253, 255);
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+ }
+ 
+.lilac:hover .overlay {
+    opacity: 1;
+ }
+
+ .lilac:hover img {
+    transform: scale(1.05);
+    filter: brightness(60%);
+ }
+ 
+ .love:hover .overlay {
+    opacity: 1;
+ }
+.love:hover img {
+    transform: scale(1.05);
+    filter: brightness(60%);
+ }
+ .poem:hover .overlay {
+    opacity: 1;
+ }
+.poem:hover img {
+    transform: scale(1.05);
+    filter: brightness(60%);
+ } 
+ .spotify a {
+    text-decoration: none;
+    color: rgb(212, 99, 194);
+    font-size: 18px;
+ }
+ .spotify:hover a {
+    background-color: purple;
+    color: #eaeaea;
+ }
+ .galeri {
+    padding: 20px;
+    font-size: 28px;
+    margin-bottom: -15px;
+    margin-top: -15px;
+    text-align: center;
+ }
+ .Konser {
+    padding: 20px;
+    font-size: 18px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-left: 10px;
+ }
+.konser img {
+    background-size: cover;
+    height: 200px;
+    width: 150px;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 35%;
+}
+.Fs {
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: -15px;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+.FS img {
+    background-size: cover;
+    height: 200px;
+    width: 150px;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 35%;
+}
+
+.footer {
+    border-radius: 25px;
+    background-color: #333;
+    padding: 10px;
+}
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
