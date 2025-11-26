@@ -1,0 +1,365 @@
+/* font */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/kaushanscript-regular-webfont.woff) format('woff')
+}
+
+/* style utama */
+body {
+    font: 18px/36px 'BebasNeue';
+    /* background-color: rgb(90, 179, 238); */
+    background: linear-gradient(to bottom, #7cd1f9, #2e86c1, #154360);
+    background-attachment: fixed;
+}
+h1 {
+    font-size: 80px;
+    margin: 55px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+h2 {
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+/* h3 {
+    font-size: 30px;
+    font-weight: bold;
+} */
+ol {
+    list-style: decimal;
+    padding-left: 20px;
+    
+}
+li {
+    font-size: 20px;
+    font-weight: bold;
+}
+.container {
+    width: 800px;
+    /* background-color: rgb(178, 211, 238); */
+    background: linear-gradient(to bottom, #b7e9f7, #8fd3e6, #5ba8d1);
+    background-attachment: fixed;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0,.4);
+    border-radius: 5px;
+}
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    border: 5px solid #666;
+    float: left;
+    margin-right: 50px;
+    margin-left: 20px;
+    position: relative;
+}
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200,.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: .4s;
+}
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+.gallery  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+} 
+.clear {
+    clear: both;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.7)
+}
+.overlay img {
+    max-height: 100%;
+    border-radius: 0%;
+    height: 800px;
+    width: 600px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.8);
+}
+
+.overlay:target img {
+    animation: zoomdanfade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px ;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 22px;
+    display: none;
+    color: white;
+    padding: -25px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    display: block;
+    animation: slidedown .5s .5s forwards;
+}
+/* .overlay:target .next {
+    animation: fadeaja .5s .5s forwards;
+} */
+ /* navigasi */
+ .next, .prev {
+    width: 111px;
+    height: 103px;
+    background-image: url(../img/next.jpg);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 1000px;
+    display: none;
+    opacity: 0;
+ }
+ 
+ .overlay:target .next,
+ .overlay:target .prev {
+    display: block;
+    animation: fadeaja .5s .5s forwards;
+
+ }
+  
+
+.prev {
+    background-image: url(../img/prev.jpg);
+    margin-left: 100px;
+ }
+
+
+/* animasi */
+@keyframes fadeaja {
+    0% { opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomdanfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+.gallery2 li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    border: 5px solid #666;
+    float: left;
+    margin-right: 10px;
+    margin-left: 12px;
+    position: relative;
+    margin-top:10px ;
+}
+.gallery2 li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200,.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: .4s;
+}
+.gallery2 li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+.gallery2  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+} 
+.clear {
+    clear: both;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.7)
+}
+.overlay img {
+    max-height: 100%;
+    border-radius: 0%;
+    height: 800px;
+    width: 600px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.8);
+}
+
+.overlay:target img {
+    animation: zoomdanfade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px ;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 22px;
+    display: none;
+    color: white;
+    padding: -25px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    display: block;
+    animation: slidedown .5s .5s forwards;
+}
+/* .overlay:target .next {
+    animation: fadeaja .5s .5s forwards;
+} */
+ /* navigasi */
+ .next, .prev {
+    width: 111px;
+    height: 103px;
+    background-image: url(../img/next.jpg);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 1000px;
+    display: none;
+    opacity: 0;
+ }
+ 
+ .overlay:target .next,
+ .overlay:target .prev {
+    display: block;
+    animation: fadeaja .5s .5s forwards;
+
+ }
+  
+
+.prev {
+    background-image: url(../img/prev.jpg);
+    margin-left: 100px;
+ }
+
+
+/* animasi */
+@keyframes fadeaja {
+    0% { opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomdanfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
