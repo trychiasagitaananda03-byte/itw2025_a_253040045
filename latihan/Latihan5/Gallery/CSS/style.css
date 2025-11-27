@@ -17,18 +17,25 @@ h1 {
     text-align: center;
     text-shadow: 1px 1px 1px white;
 }
+.Marine{
+    font-size: 30px;
+    padding-top: 170px;
+    padding-bottom: 15px;
+}
 h2 {
     font-size: 50px;
-    padding-top: 40px;
+    padding-top: 25px;
     padding-bottom: 30px;
 }
-/* h3 {
+h3 {
     font-size: 30px;
-    font-weight: bold;
-} */
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
 ol {
     list-style: decimal;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
     
 }
 li {
@@ -43,7 +50,7 @@ li {
     margin: auto;
     padding: 20px;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0,.4);
-    border-radius: 5px;
+    border-radius: 20px;
 }
 .gallery li {
     width: 120px;
@@ -208,7 +215,7 @@ li {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    /* overflow: hidden; */
+    overflow: hidden;
     border: 5px solid #666;
     float: left;
     margin-right: 10px;
