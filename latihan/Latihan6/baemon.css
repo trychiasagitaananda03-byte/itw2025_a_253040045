@@ -15,30 +15,121 @@ body {
     margin: 50px auto;
     padding: 20px;
     display: flex;
-    background-color: rgb(182, 41, 41);
+    background-color: rgb(172, 19, 19);
     justify-content: center; 
     align-items: center;
-   
+    border-radius: 30px;
 }
 .container img {
     width: 800px;
     height: 400px;
-    
+    border-radius: 20px;
+    box-shadow: 0 3px 4px black;
 }
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-shadow: 0 2px 3px white;
+}
+h4 {
+    margin-bottom: 10px;
 }
 .container-dua {
  width: 800px;
     margin: 50px auto;
     padding: 20px;
+    border-radius: 15px;
     display: flex;
-    background-color: rgb(182, 41, 41);
+    background-color: rgb(172, 19, 19);
     align-items: center;
+    /* justify-content: space-evenly; */
 }
-
-
+h3 {
+    margin-right: 20px;
+}
+.container-tiga {
+    width: 800px;
+    margin: 50px auto;
+}
+.member {
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 12px;
+    border-radius: 30px;
+}
+.member.Ruka {
+    background-color: rgb(177, 25, 25);
+}
+.member.Pharita {
+    background-color: rgb(177, 25, 25);
+}
+.member.asa {
+     background-color: rgb(177, 25, 25);
+}
+.member.Ahyeon {
+    background-color: rgb(177, 25, 25);
+}
+.member.rami {
+     background-color: rgb(177, 25, 25);
+}
+.member.rora {
+    background-color: rgb(177, 25, 25);
+}
+.member.canny {
+    background-color: rgb(177, 25, 25);
+}
+.container-empat {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thumbnail {
+    width: 50%;
+    margin: 30px;
+    
+}
+.thumbnail img {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgb(245, 212, 212);
+}
+.container-lima {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+.album {
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background-color: #910404;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+.album .header {
+    height: 150px;
+    background-color: rgb(77, 9, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 3px 5px black;
+}
+.album.besar {
+    transform: scale(1.12);
+}
+.album .content {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: rgb(247, 220, 220);
+}
 /* navbar */
 nav {
     display: flex;
@@ -48,10 +139,14 @@ nav {
     height: 50px;
     align-items: center;
     z-index: 500;
+    position: relative;
 }
 nav .logo {
     font-family: 'Pacifico', cursive;
     letter-spacing: 3px;
+    position: relative;
+    z-index: 2000;
+    text-shadow: 0 2px 4px black;
 }
 nav ul {
     display: flex;
@@ -131,9 +226,9 @@ nav ul li a:hover {
     nav ul {
         right: 0;
         top: 0;
-        width: 70%;
+        width: 60%;
         height: 100vh;
-        position: fixed;
+        position: absolute;
         flex-direction: column;
         background-color: rgb(138, 15, 15);
         align-items: center;
@@ -150,5 +245,104 @@ nav ul li a:hover {
     nav ul.slide {
         transform: translateX(0);
         opacity: 1;
+    }
+     .container-tiga {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;     
+        gap: 20px;               
+        width: 90%;              
+        margin: 0 auto;
+    }
+
+    .member {
+        width: 100%;             
+        margin: 0;               
+        padding: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto; 
+        border-radius: 10px;
+    }
+    .container-dua {
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        display: block;   
+        text-align: center;
+    }
+
+    .container-dua h3 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+     .container-empat {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px auto;
+    }
+
+    .thumbnail {
+        width: 45%;     
+        margin: 0;      
+    }
+
+    .thumbnail img {
+        border-radius: 20px;
+        box-shadow: 0 2px 6px rgba(245, 212, 212, 0.8);
+    }
+    .container-lima {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+    .album {
+        width: 45%;
+        margin: 0;
+    }
+    .album.besar {
+        width: 95%;
+    }
+    .album .header {
+        height: 100px;
+        font-size: 0.9em;
+    }
+    .album .content {
+        padding: 10px;
+        font-size: 0.85em;
+    }
+
+}
+@media( min-width: 600px ) {
+    .container-tiga {
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+    }
+    .container-tiga .member.canny:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .member {
+    width: 30%;
+    }
+    .thumbnail {
+        width: 25%;
     }
 }
